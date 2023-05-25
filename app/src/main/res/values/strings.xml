@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">zae_s_application16</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_kelas_10_ipa_8">Kelas 10 IPA 8</string>
+<string name="lbl_profil">Profil</string>
+<string name="msg_ambil_dari_kame2">Ambil Dari kamera</string>
+<string name="msg_ambil_dari_kame">Ambil Dari Kamera</string>
+<string name="msg_ambil_dari_gall2">Ambil dari Gallery</string>
+<string name="lbl_simpan">Simpan</string>
+<string name="msg_ganti_foto_prof">Ganti Foto Profil</string>
+<string name="lbl_ambil_foto">Ambil Foto</string>
+<string name="msg_ambil_dari_gall">Ambil Dari Gallery</string>
+<string name="lbl_potong_gambar">Potong Gambar</string>
+<string name="lbl_john_doe">John Doe</string>
+</resources>

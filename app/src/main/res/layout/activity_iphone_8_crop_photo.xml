@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone8CropPhotoVM" type="com.zaesapplication.app.modules.iphone8cropphoto.data.viewmodel.Iphone8CropPhotoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearIPhone8Crop"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleindigo_900">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft_white_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_white_a700"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPotongGambar"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_144pxh"
+                    android:layout_marginStart="@dimen/_18pxh"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{iphone8CropPhotoVM.iphone8CropPhotoModel.txtPotongGambar}"
+                    style="@style/txtNunitobold24" tools:text="@string/lbl_potong_gambar"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:id="@+id/frameStackgroupfive"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_579pxv"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_343pxh">
+            <ImageView android:id="@+id/imageImageOne"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+                imageRes="@{@drawable/img_image1_579x343}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image1_579x343"/>
+            <LinearLayout android:id="@+id/linearColumngroupfive"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:gravity="center_horizontal"
+                    android:id="@+id/imageGroupFive"
+                    android:layout_height="@dimen/_288pxh"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_28pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group5"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_group5"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSimpan"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_105pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_simpan"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRoundedBottomCorner" tools:text="@string/lbl_simpan"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

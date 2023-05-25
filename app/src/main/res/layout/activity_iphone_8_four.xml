@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone8FourVM" type="com.zaesapplication.app.modules.iphone8four.data.viewmodel.Iphone8FourVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowleft"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleindigo_900">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_marginBottom="@dimen/_18pxv"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft_white_a700"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_white_a700"/>
+
+                <TextView
+                    android:id="@+id/txtProfil"
+                    style="@style/txtNunitobold24"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_262pxh"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:layout_weight="0.75"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{iphone8FourVM.iphone8FourModel.txtProfil}"
+                    tools:text="@string/lbl_profil" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnrectanglefour"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowjohndoe"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageImageOne"
+                        android:layout_height="@dimen/_56pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_56pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_8pxh}"
+                        imageRes="@{@drawable/img_image1_343x343}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image1_343x343"/>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumnjohndoe"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_weight="0.59"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtJohnDoe"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone8FourVM.iphone8FourModel.txtJohnDoe}"
+                            style="@style/txtNunitobold12" tools:text="@string/lbl_john_doe"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtKelas10IPAEight"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone8FourVM.iphone8FourModel.txtKelas10IPAEight}"
+                            style="@style/txtNunitoregular12" tools:text="@string/lbl_kelas_10_ipa_8"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:background="@drawable/rectangle_bg_indigo_900_radius_8"
+                    android:id="@+id/viewRectangleFour"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_196pxv"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_341pxh"/>
+                <FrameLayout android:id="@+id/frameStackambildarigall"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_196pxv"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_341pxh">
+                    <LinearLayout
+                        android:id="@+id/linearColumnambildarikame"
+                        android:layout_gravity="top|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_44pxv"
+                        android:layout_marginEnd="@dimen/_118pxh"
+                        android:layout_marginStart="@dimen/_118pxh"
+                        android:layout_marginTop="@dimen/_44pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <FrameLayout
+                            android:id="@+id/frameStackambildarikame"
+                            android:layout_height="@dimen/_17pxv" android:layout_width="@dimen/_103pxh">
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtAmbilDarikame"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{iphone8FourVM.iphone8FourModel.txtAmbilDarikame}"
+                                style="@style/txtNunitobold12_1" tools:text="@string/msg_ambil_dari_kame2"/>
+                            <TextView android:ellipsize="end"
+                                android:gravity="top|start"
+                                android:id="@+id/txtAmbilDarikameOne"
+                                android:layout_gravity="start"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{iphone8FourVM.iphone8FourModel.txtAmbilDarikameOne}"
+                                style="@style/txtNunitobold12_1" tools:text="@string/msg_ambil_dari_kame2"/>
+                        </FrameLayout>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtAmbildariGall"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_40pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{iphone8FourVM.iphone8FourModel.txtAmbildariGall}"
+                            style="@style/txtNunitobold12_1" tools:text="@string/msg_ambil_dari_gall2"/>
+                    </LinearLayout>
+                    <View
+                        android:background="@drawable/rectangle_bg_indigo_900_radius_8"
+                        android:id="@+id/viewRectangleFive"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_196pxv" android:layout_width="@dimen/_341pxh"/>
+                </FrameLayout>
+                <View
+                    android:background="@drawable/rectangle_bg_indigo_900_radius_8"
+                    android:id="@+id/viewRectangleSix"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_196pxv"
+                    android:layout_marginStart="@dimen/_2pxh"
+                    android:layout_marginTop="@dimen/_17pxv" android:layout_width="@dimen/_341pxh"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
